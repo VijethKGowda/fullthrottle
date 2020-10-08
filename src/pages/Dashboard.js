@@ -52,7 +52,7 @@ const Dashboard = () => {
                     <hr />
                 </section>
 
-                <div className="-mt-10 lg:-mt-16 grid sm:grid-cols-3 md:grid-cols-3 gap-10 lg:px-48 px-3 w-full">
+                <div className="-mt-10 lg:-mt-16 grid sm:grid-cols-3 md:grid-cols-3 gap-7 lg:px-48 px-3 w-full">
                     {users.map((mems) => (
                         mems.members
                             .filter((user) => {
