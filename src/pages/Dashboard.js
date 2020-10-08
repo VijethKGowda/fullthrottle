@@ -33,7 +33,7 @@ const Dashboard = () => {
 
         <section className="px-3 sm:px-3 md:px-20 lg:px-48 mt-20 lg:mt-32 mb-12 lg:mb-20">
           <h2 className="text-left font-medium text-base lg:text-lg pl-1 text-white tracking-tight mb-2 mt-5">
-            Full Throttle Users
+            FullThrottle Users
           </h2>
           <hr />
         </section>

@@ -575,6 +575,10 @@ svg {
   font-size: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
