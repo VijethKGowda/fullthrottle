@@ -15,7 +15,7 @@ const NavBar = ({ onFilter }) => {
         <span>
           <input
             type="text"
-            className="border-b-1 border-white bg-transparent w-20 lg:w-40 focus:outline-none"
+            className="border-b-1 border-white bg-transparent w-20 lg:w-40 focus:outline-none placeholder-white"
             placeholder="Search..."
             onChange={onFilter}
           />

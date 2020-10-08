@@ -89,13 +89,14 @@ const Modal = ({ closeModal, userActiveTimes }) => {
                 value={selectedDays}
                 onChange={clickHandler}
                 shouldHighlightWeekends
-                colorPrimary="#2C65C8"
+                colorPrimary="#4299e1"
                 calendarClassName="custom-calendar"
                 calendarTodayClassName="custom-today-day" 
                 renderFooter={() => (
                   <div className="w-full flex justify-center">
                     <button
-                      className="px-2 py-4 mx-auto text-red-700 text-base"
+                      className="px-4 py-2 bg-red-500 text-sm font-semibold text-white rounded"
+                      style={{ 'border': 'none', 'outline': 'none' }}
                       onClick={() => {
                         clickHandler
                         setSelectedDays(null)

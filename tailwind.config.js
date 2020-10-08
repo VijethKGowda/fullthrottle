@@ -11,10 +11,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': '#2C65C8',
-        'secondary': '#702CC8',
-        'a': '#2C65C8',
-        'c': '#5e3bc8'
+        // 'primary': '#2C65C8',
+        // 'secondary': '#702CC8',
+        // 'a': '#2C65C8',
+        // 'c': '#5e3bc8'
       }, spacing: {
         px: '1px',
       '0': '0',
