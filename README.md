@@ -15,7 +15,7 @@
 * [File Structure](#file-structure)
 
 ## Description
-> Determining FTL user active time periods according to date.
+> Determining Fullthrottle user active time periods according to date.
 
 ### Available Scripts
 
@@ -71,17 +71,17 @@ Within the download you'll find the following directories and files:
 |-- css
 |   |-- tailwind.css
 `-- src
-    |-- assets
-    |   `-- img
-    |       |-- dashboard.png
-    |       |-- profile3.jpg
     |-- components
+    |   |-- BgAnimation
+    |       `-- NavBar.js
+    |       `-- style.css
     |   |-- NavBar
     |       `-- NavBar.js
     |   |-- UserCard
     |       `-- UserCard.js
     |   |-- Modal
     |       `-- Modal.js
+    |       `-- style.css
     |-- data
     |   |-- user.js
     |-- pages
