@@ -3,7 +3,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)</a>
 
-## 🎏 Live Site: [FTL-assignment.netlify.app](https://ftl-useractivity.netlify.app/)
+## 🎏 Live Site: [fullthrottle-test](https://fullthrottleassessment.netlify.app/)
 
 ## Table of Contents
 
