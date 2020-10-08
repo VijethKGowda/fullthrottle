@@ -28,17 +28,17 @@ const Dashboard = () => {
   return (
     <div>
       <BgAnimation />
-      <div className="absolute w-full">
+      <div className="w-full absolute">
         <NavBar onFilter={handleFilter} />
 
-        <section className="px-3 lg:px-48 mt-20 lg:mt-32 mb-12 lg:mb-20">
+        <section className="px-3 sm:px-3 md:px-20 lg:px-48 mt-20 lg:mt-32 mb-12 lg:mb-20">
           <h2 className="text-left font-medium text-base lg:text-lg pl-1 text-white tracking-tight mb-2 mt-5">
             Full Throttle Users
-                    </h2>
+          </h2>
           <hr />
         </section>
 
-        <div className="-mt-10 lg:-mt-16 grid sm:grid-cols-3 md:grid-cols-3 gap-7 lg:px-48 px-3 w-full">
+        <div className="w-full grid sm:grid-cols-3 md:grid-cols-3 gap-7 px-3 sm:px-3 md:px-20 lg:px-48 -mt-10 lg:-mt-16">
           {users.map((mems) => (
             mems.members
               .filter((user) => {

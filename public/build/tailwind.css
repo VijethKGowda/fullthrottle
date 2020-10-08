@@ -93,10 +93,6 @@ a {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
-  border-style: none;
-}
-
 /* Forms
    ========================================================================== */
 
@@ -331,10 +327,6 @@ hr {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
-img {
-  border-style: solid;
-}
-
 input::placeholder {
   color: #a0aec0;
 }
@@ -393,7 +385,7 @@ input {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
+
 svg {
   display: block;
   vertical-align: middle;
@@ -405,11 +397,6 @@ svg {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .bg-transparent {
   background-color: transparent;
@@ -512,8 +499,16 @@ img {
   display: grid;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .justify-end {
@@ -548,12 +543,12 @@ img {
   font-weight: 700;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
 .h-72 {
   height: 18rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -635,10 +630,6 @@ img {
   max-width: 24rem;
 }
 
-.object-cover {
-  object-fit: cover;
-}
-
 .outline-none {
   outline: 0;
 }
@@ -657,6 +648,10 @@ img {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-2 {
@@ -689,12 +684,13 @@ img {
   padding-right: 1rem;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .pt-4 {
@@ -731,16 +727,8 @@ img {
   right: 0;
 }
 
-.left-0 {
-  left: 0;
-}
-
 .shadow-sm {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-.shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .hover\:shadow-sm:hover {
@@ -793,6 +781,10 @@ img {
   color: rgba(102, 126, 234, var(--text-opacity));
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -805,25 +797,12 @@ img {
   width: auto;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .w-full {
   width: 100%;
 }
 
 .z-50 {
   z-index: 50;
-}
-
-.gap-10 {
-  grid-gap: 2.5rem;
-  gap: 2.5rem;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 @keyframes spin {
@@ -859,8 +838,8 @@ img {
 
 @media (min-width: 640px) {
 
-  .sm\:h-48 {
-    height: 12rem;
+  .sm\:h-full {
+    height: 100%;
   }
 
   .sm\:py-2 {
@@ -868,8 +847,13 @@ img {
     padding-bottom: 0.5rem;
   }
 
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:grid-cols-3 {
@@ -879,12 +863,21 @@ img {
 
 @media (min-width: 768px) {
 
-  .md\:pr-4 {
-    padding-right: 1rem;
+  .md\:h-full {
+    height: 100%;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -893,6 +886,10 @@ img {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:h-auto {
+    height: auto;
+  }
 
   .lg\:text-lg {
     font-size: 1.125rem;
@@ -924,7 +921,11 @@ img {
     width: 10rem;
   }
 
-  .lg\:w-2\/4 {
-    width: 50%;
+  .lg\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

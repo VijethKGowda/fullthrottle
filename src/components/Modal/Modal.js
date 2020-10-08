@@ -30,13 +30,8 @@ const Modal = ({ closeModal, userActiveTimes }) => {
   }, [])
 
   return (
-    <div
-      className="flex h-full w-full fixed top-0 left-0 bg-transparent-black justify-center items-center z-50 shadow-lg"
-      style={{
-        backgroundColor: "#00000030",
-      }}
-    >
-      <div className="block bg-white w-11/12 md:w-2/3 lg:w-2/4 mx-auto my-4 py-4 max-h-full overflow-y-auto relative rounded-rd">
+    <div className="grid place-items-center absolute w-full h-full bg-transparent-black z-50">
+      <div className="block bg-white w-full sm:w-full md:w-full lg:w-8/12 h-auto sm:h-full md:h-full lg:h-auto mx-auto my-4 py-4 max-h-full overflow-y-auto relative rounded-rd">
         <button
           onClick={closeModal}
           className="absolute top-0 right-0 p-2 focus:outline-none"
@@ -44,8 +39,8 @@ const Modal = ({ closeModal, userActiveTimes }) => {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-x-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
         </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 px-4 py-2 mt-4">
-          <div className="max-w-sm mt-5">
+        <div className="grid gap-7 justify-center sm:grid-row-2 md:grid-cols-2 lg:grid-cols-2 px-4 py-2 mt-4">
+          <div className="max-w-sm">
             <Calendar
               colorPrimaryLight
               calendarTodayClassName="custom-today-day"
@@ -56,27 +51,25 @@ const Modal = ({ closeModal, userActiveTimes }) => {
               calendarClassName="custom-calendar"
               calendarTodayClassName="custom-today-day"
               renderFooter={() => (
-                <div className="w-full flex justify-center">
+                <div className="w-full flex justify-center content-center p-3">
                   <button
                     className="px-4 py-2 bg-red-500 text-sm font-semibold text-white rounded m-4"
-                    style={{ 'border': 'none', 'outline': 'none' }}
                     onClick={() => {
                       clickHandler
                       setSelectedDays(null)
                       setActiveTimeResult(userActiveTimes)
                     }}
                   >
-                    Reset Date!
+                    Reset
                     </button>
                 </div>
               )}
             />
           </div>
 
-
-          <div className="w-full pr-2 md:pr-4">
+          <div className="w-full">
             <span>
-              <h2 className="text-center text-xl font-bold text-gray-800 pb-5">
+              <h2 className="text-center text-xl font-bold text-gray-800 py-5">
                 User Periods of Activity <span className="text-xs font-hairline"></span>
               </h2>
             </span>
