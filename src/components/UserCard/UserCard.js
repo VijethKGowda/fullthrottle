@@ -8,7 +8,6 @@ const UserCard = ({ name, Id, timeZone, activeClicked }) => {
             whileHover={{ scale: 1.05 }} style={{ 'border': 'none', 'outline': 'none' }}
             className="bg-gray-100 overflow-hidden shadow-sm hover:shadow-xl rounded-rd m-2 w-auto focus:outline-none outline-none"
             key={Id}>
-            {/* <img src={require('../../assets/images/profile3.jpg')} alt="random" className="w-full h-48 sm:h-48 object-cover" /> */}
             <div className="m-4">
                 <span className="text-gray-800 text-xl sm:py-2 font-bold py-4">{name}</span>
                 <div className="flex justify-between text-gray-700 py-2">

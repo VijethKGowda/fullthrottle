@@ -110,8 +110,6 @@ const Modal = ({ closeModal, userActiveTimes }) => {
                   </h2>)
             }
           </div>
-
-
         </div>
       </div>
     </div>
